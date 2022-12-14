@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="perfect.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.84096521"
+     inkscape:cx="222.95809"
+     inkscape:cy="777.67783"
+     inkscape:window-width="1440"
+     inkscape:window-height="2507"
+     inkscape:window-x="-8"
+     inkscape:window-y="22"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="rect234"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.852507;stroke-linecap:round;stroke-linejoin:round"
+       d="M 28.565698 48.70142 L 28.565698 75.159753 L 55.024032 75.159753 L 55.024032 48.70142 L 28.565698 48.70142 z M 29.888615 50.024337 L 53.701115 50.024337 L 53.701115 73.836837 L 29.888615 73.836837 L 29.888615 50.024337 z "
+       inkscape:export-filename="perfect.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       id="path912"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.852507;stroke-linecap:round;stroke-linejoin:round"
+       d="m 79.187034,101.52512 v 13.36352 l 1.322917,-0.48059 v -11.56002 h 11.90625 v -1.32291 z m 17.132288,0 0.532783,1.32291 h 7.470345 v 8.82686 l 1.32292,0.67901 v -10.82878 z m 9.326048,17.82268 -1.32292,1.03922 v 6.27351 h -1.15238 l 0.27233,1.32292 h 2.20297 z m -20.797183,7.31273 -0.79375,1.32292 h 8.282182 l -0.727604,-1.32292 z"
+       inkscape:export-filename="perfect2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       id="path976"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.809882;stroke-linecap:round;stroke-linejoin:round"
+       d="m 92.416207,102.18657 v 1.25677 h 4.21411 l -0.506145,-1.25677 z m 11.310933,9.64229 v 8.27602 l 1.25677,-0.98725 v -6.6437 z m -22.621872,2.59649 -1.256771,0.45657 v 12.44007 h 4.624034 l 0.754062,-1.25678 h -4.121325 z m 10.544112,11.63986 0.691224,1.25678 h 10.550486 l -0.25871,-1.25678 z" />
+  </g>
+</svg>

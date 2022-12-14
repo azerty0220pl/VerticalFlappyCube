@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="vibrationButton.svg"
+   xml:space="preserve"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.914906"
+     inkscape:cx="312.05391"
+     inkscape:cy="524.64406"
+     inkscape:window-width="2560"
+     inkscape:window-height="1387"
+     inkscape:window-x="-8"
+     inkscape:window-y="22"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" /><defs
+     id="defs2" /><g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1"><path
+       style="fill:none;stroke:#000000;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 10.539924,261.47983 c 0,6.24324 8.756761,15 14.999999,15 H 135.53993 c 5.59602,0 15,-9.40398 15,-15 V 26.479831 c 0,-6.603364 -8.39664,-15 -15,-15 H 25.539923 c -7.071068,0 -14.999999,7.928932 -14.999999,15 z"
+       id="path1747"
+       sodipodi:nodetypes="sssssssss" /><path
+       style="fill:none;stroke:#000000;stroke-width:2.46882;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 15.223083,249.57014 c 0,5.82555 8.170915,13.99646 13.996466,13.99646 H 131.86031 c 5.22164,0 13.99646,-8.77482 13.99646,-13.99646 V 30.292165 c 0,-6.161584 -7.83488,-13.996465 -13.99646,-13.996465 H 29.219549 c -6.597997,0 -13.996466,7.398467 -13.996466,13.996465 z"
+       id="path2573"
+       sodipodi:nodetypes="sssssssss" /><circle
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.551;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="path3359"
+       cx="80.539925"
+       cy="26.750242"
+       r="2.4581304" /><path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 200,7.5189876 -25,24.8704954 25,33.257058 -25,26.31646 25,23.424529 -25,39.90848 25,24.00292 -25,30.36514 25,25.44888 -37.76339,21.40019 L 200,275.59981"
+       id="path3361"
+       sodipodi:nodetypes="ccccccccccc" /></g></svg>
