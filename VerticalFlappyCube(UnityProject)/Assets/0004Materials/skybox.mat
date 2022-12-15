@@ -58,14 +58,14 @@ Material:
     - _Origin: -5.04
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _botOrigin: -8
+    - _botOrigin: -7.5
     - _botSpread: 10
     - _spread: 12.52
-    - _topOrigin: -0.5
+    - _topOrigin: -1
     - _topSpread: 10
     m_Colors:
-    - _Bot: {r: 0.43124998, g: 0.44375002, b: 0.05624998, a: 1}
-    - _Mid: {r: 0.31875002, g: 0.19375002, b: 0.30624998, a: 1}
-    - _Top: {r: 0.068750024, g: 0.05624998, b: 0.44375002, a: 1}
+    - _Bot: {r: 0.5, g: 0, b: 0.024999999, a: 1}
+    - _Mid: {r: 0.024999999, g: 0.5, b: 0, a: 1}
+    - _Top: {r: 0, g: 0.024999999, b: 0.5, a: 1}
     - _midColor: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

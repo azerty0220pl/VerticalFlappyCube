@@ -6,6 +6,17 @@ public class ObstacleMan : MonoBehaviour
 {
     public Rigidbody2D rb;
     public Animator anim;
+    public Sprite[] skins;
+
+    public SpriteRenderer obstacle1;
+    public SpriteRenderer obstacle2;
+
+    private void Start()
+    {
+        int aux = PlayerPrefs.GetInt("skin");
+        obstacle1.sprite = skins[aux];
+        obstacle2.sprite = skins[aux];
+    }
 
     public void move(float vel)
     {

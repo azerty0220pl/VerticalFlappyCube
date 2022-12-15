@@ -8,12 +8,20 @@ public class Character : MonoBehaviour
     public Rigidbody2D rb;
     public GameController gc;
     public GameObject skin;
+    public SpriteRenderer skinSprite;
     public ParticleSystem ps;
     public ParticleSystem perf1;
     public ParticleSystem perf2;
     public ParticleSystem perf3;
     public ParticleSystem perf4;
     private int state = 0;
+
+    public Sprite[] skinSprites;
+
+    private void Start()
+    {
+        skinSprite.sprite = skinSprites[PlayerPrefs.GetInt("skin")];
+    }
 
     private void Update()
     {

@@ -25,8 +25,8 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.35355339"
-     inkscape:cx="1412.7993"
-     inkscape:cy="1340.6745"
+     inkscape:cx="1245.9222"
+     inkscape:cy="1343.5029"
      inkscape:window-width="2560"
      inkscape:window-height="1387"
      inkscape:window-x="-8"
@@ -45,6 +45,16 @@
          height="43.404568"
          x="371.55811"
          y="66.145836" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath484">
+      <circle
+         style="fill:#ffffff;stroke-width:4.53274;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:4.53274, 13.5982;stroke-dashoffset:10.4253"
+         id="circle486"
+         cx="469.52264"
+         cy="335"
+         r="25" />
     </clipPath>
   </defs>
   <g
@@ -613,6 +623,91 @@
            id="path14811"
            sodipodi:nodetypes="ccccc" />
       </g>
+    </g>
+    <rect
+       style="fill:#ffffff;stroke-width:2.21874;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:2.21874, 6.65622;stroke-dashoffset:5.10311"
+       id="rect374-9"
+       width="37.5"
+       height="50"
+       x="719.7774"
+       y="190.22185" />
+    <path
+       id="path3413"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:23;stroke-opacity:1"
+       d="m 861.73026,119.73651 a 64.732681,64.732681 0 0 0 -64.73248,64.733 h 129.46548 a 64.732681,64.732681 0 0 0 -64.733,-64.733 z" />
+    <g
+       id="g3432"
+       style="stroke:#ffffff"
+       transform="matrix(0.93722421,0,0,0.96182859,26.037581,13.216144)"
+       inkscape:export-filename="..\VerticalFlappyCube(UnityProject)\Assets\0005Textures\shop.png"
+       inkscape:export-xdpi="32.512009"
+       inkscape:export-ydpi="32.512009">
+      <rect
+         style="fill:none;stroke:#ffffff;stroke-width:7.9375;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:19.0941;stroke-opacity:1"
+         id="rect374"
+         width="175"
+         height="150"
+         x="434.31296"
+         y="401.41348" />
+      <rect
+         style="fill:none;stroke:#ffffff;stroke-width:7.9375;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:8.33335;stroke-opacity:1"
+         id="rect603"
+         width="50"
+         height="100"
+         x="496.81299"
+         y="451.41345" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:7.9375;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:6.08542;stroke-opacity:1"
+         d="m 418.00839,401.41349 25,-50.00001 h 37.49998 l -12.49997,50.00001 z"
+         id="path661" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:7.9375;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:6.08542;stroke-opacity:1"
+         d="m 482.16282,351.41348 -12.49997,50.00001 h 49.99998 v -50.00001 z"
+         id="path663" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:7.9375;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:6.08542;stroke-opacity:1"
+         d="m 521.81296,351.41348 v 50.00001 h 50 l -12.49997,-50.00001 z"
+         id="path665" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:7.9375;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:6.08542;stroke-opacity:1"
+         d="m 623.46739,401.41349 -24.99998,-50.00001 h -37.5 l 12.49997,50.00001 z"
+         id="path667" />
+      <path
+         id="path1223"
+         style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:7.9375;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:23;stroke-opacity:1"
+         d="m 468.0084,401.41349 h -49.0086 a 24.504282,24.008688 0 0 0 24.5042,24.00861 24.504282,24.008688 0 0 0 24.5044,-24.00861 z" />
+      <path
+         id="path3416"
+         style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:7.9375;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:23;stroke-opacity:1"
+         d="m 519.66283,401.41349 h -49.0086 a 24.504282,24.008688 0 0 0 24.5042,24.00861 24.504282,24.008688 0 0 0 24.5044,-24.00861 z" />
+      <path
+         id="path3418"
+         style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:7.9375;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:23;stroke-opacity:1"
+         d="m 571.31726,401.41349 h -49.0086 a 24.504282,24.008688 0 0 0 24.5042,24.00861 24.504282,24.008688 0 0 0 24.5044,-24.00861 z" />
+      <path
+         id="path3420"
+         style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:7.9375;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:23;stroke-opacity:1"
+         d="m 622.97169,401.41349 h -49.0086 a 24.504282,24.008688 0 0 0 24.5042,24.00861 24.504282,24.008688 0 0 0 24.5044,-24.00861 z" />
+    </g>
+    <g
+       id="g4338"
+       style="stroke-width:7.9375;stroke-dasharray:none"
+       inkscape:export-filename="..\VerticalFlappyCube(UnityProject)\Assets\0005Textures\coin.png"
+       inkscape:export-xdpi="64.074509"
+       inkscape:export-ydpi="64.074509">
+      <circle
+         style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:7.9375;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:31.4961;stroke-opacity:1"
+         id="path4332"
+         cx="559.76929"
+         cy="99.15699"
+         r="46.772167" />
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:7.9375;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:31.4961;stroke-opacity:1"
+         id="rect4334"
+         width="20.953932"
+         height="36.669376"
+         x="549.2923"
+         y="80.822304" />
     </g>
   </g>
 </svg>

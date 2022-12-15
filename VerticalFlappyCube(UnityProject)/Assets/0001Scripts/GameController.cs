@@ -12,12 +12,16 @@ public class GameController : MonoBehaviour
     private float vel = 4;
     private float accel = 0.05f;
     private float perfAccel = 0.025f;
+    private float backSpeed = 0.01f;
     private int perfCount = 0;
 
     public GameObject mainMenu;
     public GameObject gameOver;
+    public GameObject vibButton1;
+    public GameObject vibButton2;
     public TMP_Text scoreText;
-    public GameObject vibOn;
+    public TMP_Text coinText1;
+    public TMP_Text coinText2;
     public Character character;
 
     public Animator score1;
@@ -27,6 +31,8 @@ public class GameController : MonoBehaviour
     public Animator perfect3;
     public Animator perfect4;
 
+    private bool vib = true;
+
     public GameObject obstacle;
     private ObstacleMan [] obsMan = new ObstacleMan[5];
     private bool obsRight = true;
@@ -35,17 +41,28 @@ public class GameController : MonoBehaviour
     private int matState = 0;
     private float matProgresss = 0;
 
-    private Color color1 = new Color(.125f, 0, .5f);
-    private Color color2 = new Color(0, .125f, .375f);
-    private Color color3 = new Color(.125f, .25f, .25f);
-    private Color color4 = new Color(.25f, .375f, .125f);
-    private Color color5 = new Color(.375f, .5f, 0);
-    private Color color6 = new Color(.5f, .375f, .125f);
-    private Color color7 = new Color(.375f, .25f, .25f);
-    private Color color8 = new Color(.25f, .125f, .375f);
+    private Color color1 = new Color(0, 0, .5f);
+    private Color color2 = new Color(0, .5f, 0);
+    private Color color3 = new Color(.5f, 0, 0);
+    private Color color4 = new Color(0, .5f, .5f);
+    private Color color5 = new Color(.5f, .5f, 0);
+    private Color color6 = new Color(.5f, 0, .5f);
 
     private void Start()
     {
+        if (PlayerPrefs.GetInt("vib") == 0)
+        {
+            vib = true;
+            vibButton1.SetActive(true);
+            vibButton2.SetActive(false);
+        }
+        else
+        {
+            vib = false;
+            vibButton1.SetActive(false);
+            vibButton2.SetActive(true);
+        }
+
         resetGame();
         matState = PlayerPrefs.GetInt("material");
         matProgresss = PlayerPrefs.GetFloat("progress");
@@ -59,7 +76,7 @@ public class GameController : MonoBehaviour
         {
             if(obsMan[cur].gameObject.transform.position.y < -0.5f)
             {
-                if (Mathf.Abs(character.getX() - obsMan[cur].gameObject.transform.position.x) < 0.15f)
+                if (Mathf.Abs(character.getX() - obsMan[cur].gameObject.transform.position.x) < 0.1f)
                 {
                     score += 2;
                     perfCount++;
@@ -112,7 +129,7 @@ public class GameController : MonoBehaviour
 
                 updateBackground();
 
-                if(vibOn.activeInHierarchy)
+                if(vib)
                     Vibrator.Vibrate(50);
             }
         }
@@ -122,11 +139,11 @@ public class GameController : MonoBehaviour
     {
         if (matState == 0)
         {
-            mat.SetColor("_Top", Color.Lerp(color1, color2, matProgresss));
-            mat.SetColor("_Mid", Color.Lerp(color7, color8, matProgresss));
-            mat.SetColor("_Bot", Color.Lerp(color5, color6, matProgresss));
+            mat.SetColor("_Top", Color.Lerp(color1, color4, matProgresss));
+            mat.SetColor("_Mid", Color.Lerp(color2, color5, matProgresss));
+            mat.SetColor("_Bot", Color.Lerp(color3, color6, matProgresss));
 
-            matProgresss += 0.01f;
+            matProgresss += backSpeed;
 
             if (matProgresss >= 1)
             {
@@ -137,11 +154,11 @@ public class GameController : MonoBehaviour
         }
         else if (matState == 1)
         {
-            mat.SetColor("_Top", Color.Lerp(color2, color3, matProgresss));
-            mat.SetColor("_Mid", Color.Lerp(color8, color1, matProgresss));
-            mat.SetColor("_Bot", Color.Lerp(color6, color7, matProgresss));
+            mat.SetColor("_Top", Color.Lerp(color4, color2, matProgresss));
+            mat.SetColor("_Mid", Color.Lerp(color5, color3, matProgresss));
+            mat.SetColor("_Bot", Color.Lerp(color6, color1, matProgresss));
 
-            matProgresss += 0.01f;
+            matProgresss += backSpeed;
 
             if (matProgresss >= 1)
             {
@@ -152,11 +169,11 @@ public class GameController : MonoBehaviour
         }
         else if (matState == 2)
         {
-            mat.SetColor("_Top", Color.Lerp(color3, color4, matProgresss));
-            mat.SetColor("_Mid", Color.Lerp(color1, color2, matProgresss));
-            mat.SetColor("_Bot", Color.Lerp(color7, color8, matProgresss));
+            mat.SetColor("_Top", Color.Lerp(color2, color5, matProgresss));
+            mat.SetColor("_Mid", Color.Lerp(color3, color6, matProgresss));
+            mat.SetColor("_Bot", Color.Lerp(color1, color4, matProgresss));
 
-            matProgresss += 0.01f;
+            matProgresss += backSpeed;
 
             if (matProgresss >= 1)
             {
@@ -167,11 +184,11 @@ public class GameController : MonoBehaviour
         }
         else if (matState == 3)
         {
-            mat.SetColor("_Top", Color.Lerp(color4, color5, matProgresss));
-            mat.SetColor("_Mid", Color.Lerp(color2, color3, matProgresss));
-            mat.SetColor("_Bot", Color.Lerp(color8, color1, matProgresss));
+            mat.SetColor("_Top", Color.Lerp(color5, color3, matProgresss));
+            mat.SetColor("_Mid", Color.Lerp(color6, color1, matProgresss));
+            mat.SetColor("_Bot", Color.Lerp(color4, color2, matProgresss));
 
-            matProgresss += 0.01f;
+            matProgresss += backSpeed;
 
             if (matProgresss >= 1)
             {
@@ -182,11 +199,11 @@ public class GameController : MonoBehaviour
         }
         else if (matState == 4)
         {
-            mat.SetColor("_Top", Color.Lerp(color5, color6, matProgresss));
-            mat.SetColor("_Mid", Color.Lerp(color3, color4, matProgresss));
-            mat.SetColor("_Bot", Color.Lerp(color1, color2, matProgresss));
+            mat.SetColor("_Top", Color.Lerp(color3, color6, matProgresss));
+            mat.SetColor("_Mid", Color.Lerp(color1, color4, matProgresss));
+            mat.SetColor("_Bot", Color.Lerp(color2, color5, matProgresss));
 
-            matProgresss += 0.01f;
+            matProgresss += backSpeed;
 
             if (matProgresss >= 1)
             {
@@ -197,41 +214,11 @@ public class GameController : MonoBehaviour
         }
         else if (matState == 5)
         {
-            mat.SetColor("_Top", Color.Lerp(color6, color7, matProgresss));
-            mat.SetColor("_Mid", Color.Lerp(color4, color5, matProgresss));
-            mat.SetColor("_Bot", Color.Lerp(color2, color3, matProgresss));
+            mat.SetColor("_Top", Color.Lerp(color6, color1, matProgresss));
+            mat.SetColor("_Mid", Color.Lerp(color4, color2, matProgresss));
+            mat.SetColor("_Bot", Color.Lerp(color5, color3, matProgresss));
 
-            matProgresss += 0.01f;
-
-            if (matProgresss >= 1)
-            {
-                matState = 6;
-                matProgresss = 0;
-                PlayerPrefs.SetInt("material", matState);
-            }
-        }
-        else if (matState == 6)
-        {
-            mat.SetColor("_Top", Color.Lerp(color7, color8, matProgresss));
-            mat.SetColor("_Mid", Color.Lerp(color5, color6, matProgresss));
-            mat.SetColor("_Bot", Color.Lerp(color3, color4, matProgresss));
-
-            matProgresss += 0.01f;
-
-            if (matProgresss >= 1)
-            {
-                matState = 7;
-                matProgresss = 0;
-                PlayerPrefs.SetInt("material", matState);
-            }
-        }
-        else if (matState == 7)
-        {
-            mat.SetColor("_Top", Color.Lerp(color8, color1, matProgresss));
-            mat.SetColor("_Mid", Color.Lerp(color6, color7, matProgresss));
-            mat.SetColor("_Bot", Color.Lerp(color4, color5, matProgresss));
-
-            matProgresss += 0.01f;
+            matProgresss += backSpeed;
 
             if (matProgresss >= 1)
             {
@@ -266,7 +253,12 @@ public class GameController : MonoBehaviour
         if (score > PlayerPrefs.GetInt("best"))
             PlayerPrefs.SetInt("best", score);
 
-        if (vibOn.activeInHierarchy)
+        int aux = score / 1;
+        coinText2.text = "+ " + aux.ToString();
+        aux += PlayerPrefs.GetInt("coin"); 
+        PlayerPrefs.SetInt("coin", aux);
+
+        if (vib)
             Vibrator.Vibrate(100);
     }
 
@@ -288,6 +280,7 @@ public class GameController : MonoBehaviour
         vel = 3;
         character.vel = vel;
         scoreText.text = PlayerPrefs.GetInt("best").ToString();
+        coinText1.text = PlayerPrefs.GetInt("coin").ToString();
         character.resetCharacter();
         gameOver.SetActive(false);
         mainMenu.SetActive(true);
@@ -308,5 +301,11 @@ public class GameController : MonoBehaviour
     public void addScore()
     {
         score++;
+    }
+
+    public void setVib(bool x)
+    {
+        vib = x;
+        PlayerPrefs.SetInt("vib", x ? 0 : 1);
     }
 }

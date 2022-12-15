@@ -214,6 +214,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 6095582866651016013}
   anim: {fileID: 4923522225440576284}
+  skins:
+  - {fileID: 21300000, guid: 69e9521cefcf02a4cb8e0e5b93ef9d7d, type: 3}
+  - {fileID: 21300000, guid: cfa347a3f677b3347b8f9344bc703de1, type: 3}
+  - {fileID: 21300000, guid: 148cd68f452425b4cb09c6361cf4d7f7, type: 3}
+  - {fileID: 21300000, guid: d73f16a0176d16c45b2112b262d78882, type: 3}
+  - {fileID: 21300000, guid: a5904b7b184382a41bd0d2f227496158, type: 3}
+  - {fileID: 21300000, guid: 5cbcd7cf1d78d944e97339589c49650f, type: 3}
+  - {fileID: 21300000, guid: f93e0db75ebb8394896e23d7c98feadf, type: 3}
+  - {fileID: 21300000, guid: 60b11f3e32ad5a848bbcd2a85a07735f, type: 3}
+  - {fileID: 21300000, guid: 33728f0d596603f49aff72812c3004cd, type: 3}
+  obstacle1: {fileID: 4957491000623406650}
+  obstacle2: {fileID: 6094219099281612211}
 --- !u!95 &4923522225440576284
 Animator:
   serializedVersion: 4
