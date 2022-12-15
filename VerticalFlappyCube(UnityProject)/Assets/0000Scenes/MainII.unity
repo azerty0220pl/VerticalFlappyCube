@@ -10969,7 +10969,7 @@ MonoBehaviour:
   mainMenu: {fileID: 1043807000}
   gameOver: {fileID: 1824792558}
   scoreText: {fileID: 2874969}
-  vibOn: {fileID: 0}
+  vibOn: {fileID: 343570877}
   character: {fileID: 1815162298}
   score1: {fileID: 1424722128}
   score2: {fileID: 81557822}
@@ -16522,8 +16522,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5cf797950259a834aa5f76a808695aad, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0

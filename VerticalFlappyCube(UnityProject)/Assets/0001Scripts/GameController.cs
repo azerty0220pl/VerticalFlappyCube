@@ -123,7 +123,7 @@ public class GameController : MonoBehaviour
         if (matState == 0)
         {
             mat.SetColor("_Top", Color.Lerp(color1, color2, matProgresss));
-            mat.SetColor("_Mid", Color.Lerp(color3, color4, matProgresss));
+            mat.SetColor("_Mid", Color.Lerp(color7, color8, matProgresss));
             mat.SetColor("_Bot", Color.Lerp(color5, color6, matProgresss));
 
             matProgresss += 0.01f;
@@ -138,7 +138,7 @@ public class GameController : MonoBehaviour
         else if (matState == 1)
         {
             mat.SetColor("_Top", Color.Lerp(color2, color3, matProgresss));
-            mat.SetColor("_Mid", Color.Lerp(color4, color5, matProgresss));
+            mat.SetColor("_Mid", Color.Lerp(color8, color1, matProgresss));
             mat.SetColor("_Bot", Color.Lerp(color6, color7, matProgresss));
 
             matProgresss += 0.01f;
@@ -153,7 +153,7 @@ public class GameController : MonoBehaviour
         else if (matState == 2)
         {
             mat.SetColor("_Top", Color.Lerp(color3, color4, matProgresss));
-            mat.SetColor("_Mid", Color.Lerp(color5, color6, matProgresss));
+            mat.SetColor("_Mid", Color.Lerp(color1, color2, matProgresss));
             mat.SetColor("_Bot", Color.Lerp(color7, color8, matProgresss));
 
             matProgresss += 0.01f;
@@ -168,7 +168,7 @@ public class GameController : MonoBehaviour
         else if (matState == 3)
         {
             mat.SetColor("_Top", Color.Lerp(color4, color5, matProgresss));
-            mat.SetColor("_Mid", Color.Lerp(color6, color7, matProgresss));
+            mat.SetColor("_Mid", Color.Lerp(color2, color3, matProgresss));
             mat.SetColor("_Bot", Color.Lerp(color8, color1, matProgresss));
 
             matProgresss += 0.01f;
@@ -183,7 +183,7 @@ public class GameController : MonoBehaviour
         else if (matState == 4)
         {
             mat.SetColor("_Top", Color.Lerp(color5, color6, matProgresss));
-            mat.SetColor("_Mid", Color.Lerp(color7, color8, matProgresss));
+            mat.SetColor("_Mid", Color.Lerp(color3, color4, matProgresss));
             mat.SetColor("_Bot", Color.Lerp(color1, color2, matProgresss));
 
             matProgresss += 0.01f;
@@ -198,7 +198,7 @@ public class GameController : MonoBehaviour
         else if (matState == 5)
         {
             mat.SetColor("_Top", Color.Lerp(color6, color7, matProgresss));
-            mat.SetColor("_Mid", Color.Lerp(color8, color1, matProgresss));
+            mat.SetColor("_Mid", Color.Lerp(color4, color5, matProgresss));
             mat.SetColor("_Bot", Color.Lerp(color2, color3, matProgresss));
 
             matProgresss += 0.01f;
@@ -213,7 +213,7 @@ public class GameController : MonoBehaviour
         else if (matState == 6)
         {
             mat.SetColor("_Top", Color.Lerp(color7, color8, matProgresss));
-            mat.SetColor("_Mid", Color.Lerp(color1, color2, matProgresss));
+            mat.SetColor("_Mid", Color.Lerp(color5, color6, matProgresss));
             mat.SetColor("_Bot", Color.Lerp(color3, color4, matProgresss));
 
             matProgresss += 0.01f;
@@ -228,7 +228,7 @@ public class GameController : MonoBehaviour
         else if (matState == 7)
         {
             mat.SetColor("_Top", Color.Lerp(color8, color1, matProgresss));
-            mat.SetColor("_Mid", Color.Lerp(color2, color3, matProgresss));
+            mat.SetColor("_Mid", Color.Lerp(color6, color7, matProgresss));
             mat.SetColor("_Bot", Color.Lerp(color4, color5, matProgresss));
 
             matProgresss += 0.01f;
