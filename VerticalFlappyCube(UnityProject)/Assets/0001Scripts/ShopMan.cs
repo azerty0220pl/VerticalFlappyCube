@@ -52,10 +52,8 @@ public class ShopMan : MonoBehaviour
         }
         else
         {
-            Debug.Log("buying...");
             if (coin >= 200)
             {
-                Debug.Log("we have the money...");
                 coin -= 200;
                 character.sprite = skinSprites[x];
                 PlayerPrefs.SetInt("skin", x);

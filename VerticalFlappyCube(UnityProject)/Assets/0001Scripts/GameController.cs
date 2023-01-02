@@ -14,6 +14,7 @@ public class GameController : MonoBehaviour
     private float perfAccel = 0.025f;
     private float backSpeed = 0.01f;
     private int perfCount = 0;
+    private int adsCounter = 0;
 
     public GameObject mainMenu;
     public GameObject gameOver;
@@ -36,6 +37,7 @@ public class GameController : MonoBehaviour
     public GameObject obstacle;
     private ObstacleMan [] obsMan = new ObstacleMan[5];
     private bool obsRight = true;
+    public AdsMan adsMan;
 
     public Material mat;
     private int matState = 0;
@@ -253,13 +255,20 @@ public class GameController : MonoBehaviour
         if (score > PlayerPrefs.GetInt("best"))
             PlayerPrefs.SetInt("best", score);
 
-        int aux = score / 1;
+        int aux = score / 6;
         coinText2.text = "+ " + aux.ToString();
         aux += PlayerPrefs.GetInt("coin"); 
         PlayerPrefs.SetInt("coin", aux);
 
         if (vib)
             Vibrator.Vibrate(100);
+
+        adsCounter++;
+        if (adsCounter >= 3)
+        {
+            adsMan.LoadNonRewardedAd();
+            adsCounter = 0;
+        }
     }
 
     public void resetGame()
