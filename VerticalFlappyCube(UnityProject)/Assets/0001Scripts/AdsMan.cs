@@ -14,6 +14,8 @@ public class AdsMan : MonoBehaviour, IUnityAdsInitializationListener, IUnityAdsL
     private bool testMode = false;
     private bool showBanner = false;
 
+    private bool ready = false;
+
     private void Start()
     {
         Initialize();
@@ -23,6 +25,8 @@ public class AdsMan : MonoBehaviour, IUnityAdsInitializationListener, IUnityAdsL
     {
         if (!showBanner)
             ToggleBanner();
+        if (!ready)
+            LoadNonRewardedAd();
     }
 
     void IUnityAdsInitializationListener.OnInitializationFailed(UnityAdsInitializationError error, string message)
@@ -30,12 +34,13 @@ public class AdsMan : MonoBehaviour, IUnityAdsInitializationListener, IUnityAdsL
 
     void IUnityAdsLoadListener.OnUnityAdsAdLoaded(string placementId)
     {
-        if (placementId.Equals(VIDEO_PLACEMENT))
-            ShowNonRewardedAd();
+        ready = true;
     }
 
     void IUnityAdsLoadListener.OnUnityAdsFailedToLoad(string placementId, UnityAdsLoadError error, string message) 
-    { }
+    {
+        ready = false;
+    }
 
     public void Initialize()
     {
@@ -70,5 +75,12 @@ public class AdsMan : MonoBehaviour, IUnityAdsInitializationListener, IUnityAdsL
     public void ShowNonRewardedAd()
     {
         Advertisement.Show(VIDEO_PLACEMENT);
+        ready = false;
+        LoadNonRewardedAd();
+    }
+
+    public bool isReady()
+    {
+        return ready;
     }
 }

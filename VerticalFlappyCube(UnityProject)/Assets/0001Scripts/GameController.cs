@@ -266,7 +266,8 @@ public class GameController : MonoBehaviour
         adsCounter++;
         if (adsCounter >= 3)
         {
-            adsMan.LoadNonRewardedAd();
+            if(adsMan.isReady())
+                adsMan.ShowNonRewardedAd();
             adsCounter = 0;
         }
     }
