@@ -37,7 +37,6 @@ public class GameController : MonoBehaviour
     public GameObject obstacle;
     private ObstacleMan [] obsMan = new ObstacleMan[5];
     private bool obsRight = true;
-    public AdsMan adsMan;
 
     public Material mat;
     private int matState = 0;
@@ -262,14 +261,6 @@ public class GameController : MonoBehaviour
 
         if (vib)
             Vibrator.Vibrate(100);
-
-        adsCounter++;
-        if (adsCounter >= 3)
-        {
-            if(adsMan.isReady())
-                adsMan.ShowNonRewardedAd();
-            adsCounter = 0;
-        }
     }
 
     public void resetGame()

@@ -23,8 +23,6 @@ Material:
   m_Name: skybox
   m_Shader: {fileID: -6465566751694194690, guid: 59d2f5216df9f7e4da1664f46f660e1f,
     type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -33,7 +31,6 @@ Material:
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
-  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -64,8 +61,8 @@ Material:
     - _topOrigin: -1
     - _topSpread: 10
     m_Colors:
-    - _Bot: {r: 0.5, g: 0, b: 0.20999993, a: 1}
-    - _Mid: {r: 0.20999993, g: 0.5, b: 0, a: 1}
-    - _Top: {r: 0, g: 0.20999993, b: 0.5, a: 1}
+    - _Bot: {r: 0.5, g: 0, b: 0.024999999, a: 1}
+    - _Mid: {r: 0.024999999, g: 0.5, b: 0, a: 1}
+    - _Top: {r: 0, g: 0.024999999, b: 0.5, a: 1}
     - _midColor: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
