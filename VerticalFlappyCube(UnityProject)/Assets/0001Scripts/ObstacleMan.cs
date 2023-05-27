@@ -42,6 +42,6 @@ public class ObstacleMan : MonoBehaviour
 
     private void vib()
     {
-        Handheld.Vibrate();
+        //Handheld.Vibrate();
     }
 }
