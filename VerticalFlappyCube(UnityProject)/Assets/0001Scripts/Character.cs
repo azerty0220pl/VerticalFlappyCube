@@ -25,7 +25,7 @@ public class Character : MonoBehaviour
 
     private void Update()
     {
-        if (gc.isGame() && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        if (gc.isGame() && ((Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) || Input.GetMouseButtonDown(0)))
         {
             switch(state)
             {
